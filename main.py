@@ -33,7 +33,7 @@ def main():
 
     while True:
         dt = clock.tick(60) / 1000
-        
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
@@ -44,7 +44,7 @@ def main():
             for bullet in shots:
                 if bullet.collision(asteroid):
                     bullet.kill()
-                    asteroid.kill()
+                    asteroid.split()
 
         for asteroid in asteroids:
             if player.collision(asteroid):
