@@ -33,15 +33,6 @@ def main():
 
     while True:
         dt = clock.tick(60) / 1000
-
-        #for sprite in updatable:
-         #   sprite.update(dt)
-        #player.update(dt)
-        #pygame.Surface.fill(screen, (0, 0, 0))
-        #for sprite in drawable:
-         #   sprite.draw(screen)
-        #player.draw(screen)
-        #pygame.display.flip()
         
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
